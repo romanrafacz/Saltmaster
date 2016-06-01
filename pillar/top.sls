@@ -1,0 +1,5 @@
+base:
+  '*':
+    - tomcat
+    - data
+    - users
