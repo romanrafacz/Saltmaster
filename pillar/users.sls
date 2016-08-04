@@ -8,4 +8,4 @@ users:
     shell: /bash/zsh
     password: Snick3rs1
     pub_ssh_key:
-      - satl://users_keys/roman_rsa_key.pub
+      - salt://users_keys/roman_rsa_key.pub
