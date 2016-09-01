@@ -1,6 +1,6 @@
 base:
   '*':
-    - tomcat
-    - data
     - users
-    - iptables
+  'elastic':
+    - users
+
