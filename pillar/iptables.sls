@@ -3,12 +3,6 @@ firewall:
   enabled: True
   strict: True
   services:
-    ssh:
-      block_nomatch: False
-      ips_allow:
-        - 0.0.0.0
-        - 192.168.0.0/24
-        - 10.0.2.2/32
     http:
       block_nomatch: False 
       protos:
@@ -41,6 +35,6 @@ firewall:
 
   whitelist:
     networks:
-      ips_allow:
+      ip_allow:
         - 10.0.0.0/8
-
+        - 192.168.0.0/24
