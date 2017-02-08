@@ -10,5 +10,7 @@ users:
     pub_ssh_key:
       - salt://users/users_keys/roman_rsa_key.pub
     file.managed:
-      - name: /etc/skel/.ssh/authorized_keys
+      - user: roman
+      - mode: 600
+      - name: /home/roman/authorized_keys
       - source: salt://users/users_keys/authorized_keys
