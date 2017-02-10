@@ -12,5 +12,6 @@ users:
     file.managed:
       - user: roman
       - mode: 600
-      - name: /home/roman/authorized_keys
+      - name: /home/roman/.ssh/authorized_keys
       - source: salt://users/users_keys/authorized_keys
+
