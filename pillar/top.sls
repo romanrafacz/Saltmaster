@@ -1,14 +1,15 @@
 base:
   '*':
     - users.users
-    - sensu.client
-    - sensu.rabbitmq
-    - java.java
     - openssh.openssh
-    - maven.maven
   'elastic':
     - users.users
   'turkey':
     - java
     - iptables
+    - sensu.client
+    - sensu.rabbitmq
+  'jvm*':
+    - java.java
+    - maven.maven
 
