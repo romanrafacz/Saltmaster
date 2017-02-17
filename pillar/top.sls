@@ -5,6 +5,7 @@ base:
     - sensu.rabbitmq
     - java.java
     - openssh.openssh
+    - maven.maven
   'elastic':
     - users.users
   'turkey':
