@@ -1,12 +1,17 @@
 users:
   roman:
     fullname: Roman Rafacz
+    password: $6$Yh4Qv.FM$g2i8qEo6ePlkgWwJ8FitHiH.ieJm16Y8XkiYv8EDE7Aws220nabkPL0sK5kzXGxpLDxO0kHyC/C4rNbyaw9uP1
+    enforce_password: True
+    empty_password: False
+    hash_password: False
     groups:
       - sudo
     home: /home/roman
+    homedir_owner: roman
+    user_dir_mode: 750
     createhome: True
-    shell: /bash/zsh
-    password: $6$E.r4fjZL$tMfEyzPHp/AMn1G22SUdrVu6rukkZFcg7xCyUUaP1E4.xUoI83igvGE07WOMXVOzB9dn6YyiVxxhkclEtvfRc1 
+    shell: /bin/zsh
     pub_ssh_key:
       - salt://users/users_keys/roman_rsa_key.pub
     file.managed:
@@ -14,4 +19,5 @@ users:
       - mode: 600
       - name: /home/roman/.ssh/authorized_keys
       - source: salt://users/users_keys/authorized_keys
+    sudouser: True
 
