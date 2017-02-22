@@ -12,4 +12,7 @@ base:
   'jvm*':
     - java.java
     - maven.maven
+    - iptables.iptables
+    - firewall.jvm
+
 
