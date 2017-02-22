@@ -2,10 +2,9 @@ base:
   '*':
     - users.users
     - openssh.openssh
+    - firewall.base
   'elastic':
     - users.users
-  'turkey':
-    - java
     - iptables
     - sensu.client
     - sensu.rabbitmq
