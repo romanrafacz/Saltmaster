@@ -3,15 +3,20 @@ base:
     - users.users
     - openssh.openssh
     - firewall.base
+    - iptables.iptables
   'elastic':
     - users.users
     - iptables
     - sensu.client
     - sensu.rabbitmq
-  'jvm*':
+  'appserver*':
     - java.java
     - maven.maven
-    - iptables.iptables
     - firewall.jvm
+    - postgres
+  'db*':
+    - postgres
+    - java.java
+    - maven.maven
 
 
