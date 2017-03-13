@@ -5,8 +5,7 @@ base:
     - firewall.base
     - iptables.iptables
   'elastic':
-    - users.users
-    - iptables
+    - iptables.iptables
     - sensu.client
     - sensu.rabbitmq
   'appserver*':
@@ -16,7 +15,8 @@ base:
     - postgres
   'db*':
     - postgres
-    - java.java
-    - maven.maven
+    - firewall.jvm
+  'nagios':
+    - postgres
 
 
