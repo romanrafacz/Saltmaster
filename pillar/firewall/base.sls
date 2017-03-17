@@ -28,3 +28,9 @@ firewall:
        - tcp
       ips_allow:
         - 172.31.0.0/20
+    1194:
+      block_nomatch: False
+      protos:
+       - tcp
+      ips_allow:
+        - 172.31.0.0/20

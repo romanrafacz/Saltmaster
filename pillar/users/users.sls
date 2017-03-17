@@ -12,12 +12,13 @@ users:
     user_dir_mode: 750
     createhome: True
     shell: /bin/zsh
+    manage_vimrc: True
     pub_ssh_key:
-      - salt://users/users_keys/roman_rsa_key.pub
+      - salt://users/keys/roman_rsa_key.pub
     file.managed:
       - user: roman
       - mode: 600
       - name: /home/roman/.ssh/authorized_keys
-      - source: salt://users/users_keys/authorized_keys
+      - source: salt://users/userskeys/authorized_keys
     sudouser: True
 
