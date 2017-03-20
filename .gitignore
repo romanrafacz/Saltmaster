@@ -1,0 +1,4 @@
+pillar/users/keys/authorized_keys
+pillar/users/keys/id_rsa
+pillar/users/keys/id_rsa.pub
+ 
