@@ -1,0 +1,7 @@
+kibana:
+  repoVersion: '5'
+  lookup:
+    sourceInstallPath: "/opt/kibana/"
+  source: false
+  config:
+    elasticsearch.url: "http://localhost:9200"

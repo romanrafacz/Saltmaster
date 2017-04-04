@@ -18,5 +18,10 @@ base:
     - firewall.jvm
   'nagios':
     - postgres
+  'elastic*':
+    - java.java
+    - elasticsearch
+    - kibana
+    - firewall.elastic
 
 
