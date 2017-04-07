@@ -1,6 +1,6 @@
 nagios:
   nrpe:
-    server_Address: 172.31.12.218
+    server_address: 172.31.12.218
     server_port: 5666
     pid_file: /var/run/nagios/nrpe.pid
     allowed_hosts: 172.31.12.218
@@ -13,3 +13,4 @@ nagios:
       - command[check_hda1]=/usr/lib/nagios/plugins/check_disk -w 20% -c 10% -p /dev/sda1
       - command[check_zombie_procs]=/usr/lib/nagios/plugins/check_procs -w 5 -c 10 -s Z
       - command[check_total_procs]=/usr/lib/nagios/plugins/check_procs -w 150 -c 200
+      - command[check_xvda1]=/user/lib/nagios/plugins/check_disk -w 20% -c 10% -p /dev/xvda1
