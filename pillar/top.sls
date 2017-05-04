@@ -18,6 +18,7 @@ base:
   'db*':
     - postgres
     - firewall.jvm
+    - docker
   'nagios':
     - postgres
   'elastic*':
