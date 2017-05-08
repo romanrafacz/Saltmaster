@@ -5,14 +5,14 @@ base:
     - iptables.iptables
     - nagios.nrpe
     - firewall.base
-  'oldyteast_elastic':
+  'old_elastic_test':
     - iptables.iptables
     - sensu.client
     - sensu.rabbitmq
     - firewall.jvm
   'appserver*':
-    - java.java
-    - maven.maven
+    - java
+    - maven
     - firewall.jvm
     - postgres
   'db*':
@@ -22,17 +22,21 @@ base:
   'nagios':
     - postgres
   'elastic*':
-    - java.java
+    - java
     - elasticsearch
     - kibana
     - firewall.elastic
     - firewall.jvm
-    - maven.maven
+    - maven
   'ngins*':
     - nginx
   'icinga*':
     - postgres
     - icinga2 
     - postgres.icinga2
-
-
+  'build*':
+    - docker
+    - firewall.docker
+    - firewall.jvm
+    - java
+    - maven

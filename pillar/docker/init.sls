@@ -21,7 +21,7 @@ docker-pkg:
     pip:
       version: '== 8.1.1'
     python_package: docker==2.1.0
-    version: 1.6.2*
+    version: 1.9.1
     refresh_repo: false
     process_signature: /usr/bin/docker
     # DEPRECATED use python_package instead
