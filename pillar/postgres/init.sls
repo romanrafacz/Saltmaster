@@ -13,6 +13,11 @@ postgres:
   pkgs_extra:
     - postgresql-contrib
 
+
+  acls:
+    - ['local', 'roman', 'all']
+    - ['host', 'steam', 'all', '172.31.0.0/20']
+
   users:
     roman:
       ensure: present

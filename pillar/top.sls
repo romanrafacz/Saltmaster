@@ -2,10 +2,9 @@ base:
   '*':
     - users.users
     - openssh.openssh
-    - iptables.iptables
     - nagios.nrpe
-    - firewall.base
   'old_elastic_test':
+    - firewall.base
     - iptables.iptables
     - sensu.client
     - sensu.rabbitmq
@@ -36,7 +35,11 @@ base:
     - postgres.icinga2
   'build*':
     - docker
-    - firewall.docker
-    - firewall.jvm
     - java
     - maven
+  'stacks*':
+    - postgres
+    - java
+    - maven 
+    - firewall
+    - firewall.jvm 

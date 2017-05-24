@@ -8,4 +8,4 @@ firewall:
   whitelist:
     networks:
       ips_allow:
-        - 172.31.0.0/16
+        - 172.31.0.0/20
