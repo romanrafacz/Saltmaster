@@ -6,7 +6,7 @@ postgres:
 
   # These are Debian/Ubuntu specific package names
   pkg: 'postgresql-9.5'
-  pkg_client: 'postgresql-client-9.3'
+  pkg_client: 'postgresql-client-9.5'
 
   # Additional packages to install with PostgreSQL server,
   # this should be in a list format
@@ -15,7 +15,8 @@ postgres:
 
 
   acls:
-    - ['local', 'roman', 'all']
+    - ['host', 'all', 'all', '0.0.0.0/0']
+    - ['host', 'all', 'all', '127.0.0.1/32']
     - ['host', 'steam', 'all', '172.31.0.0/20']
 
   users:

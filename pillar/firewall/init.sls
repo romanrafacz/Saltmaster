@@ -1,4 +1,7 @@
 firewall:
+  installed: True
+  enabled: True
+  strict: True
   services:
     http:
       block_nomatch: False

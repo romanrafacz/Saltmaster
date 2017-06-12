@@ -3,6 +3,8 @@ base:
     - users.users
     - openssh.openssh
     - nagios.nrpe
+    - firewall
+    - vim
   'old_elastic_test':
     - firewall.base
     - iptables.iptables
@@ -41,5 +43,4 @@ base:
     - postgres
     - java
     - maven 
-    - firewall
     - firewall.jvm 
