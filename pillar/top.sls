@@ -1,9 +1,8 @@
 base:
   '*':
-    - users.users
+    - users
     - openssh.openssh
     - nagios.nrpe
-    - firewall
     - vim
   'old_elastic_test':
     - firewall.base
@@ -19,7 +18,6 @@ base:
   'db*':
     - postgres
     - firewall.jvm
-    - docker
   'nagios':
     - postgres
   'elastic*':
@@ -43,4 +41,3 @@ base:
     - postgres
     - java
     - maven 
-    - firewall.jvm 
